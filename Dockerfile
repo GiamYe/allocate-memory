@@ -13,6 +13,8 @@ ADD . /root/allocate-memory
 
 WORKDIR /root/allocate-memory
 
+VOLUME /data
+
 RUN g++ memory.cpp -o memory.out
 
 RUN export PATH=$PATH:/usr/local/go/bin && \
